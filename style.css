@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: var(--color-white);
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+  --background-color: #101010;
+  --color-white: #f4f4f4;
+  --primary-color: #00afb9;
+}
+
+body{
+
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(bck.jpg);
+  background-size: cover;
+}
+
+h1{
+
+  margin: 30px;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.box-form{
+
+  width: 450px;
+  max-width: 450px;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  background-color: #15151580;
+  border: #15151570 solid;
+  box-shadow: 0px 0px 20px 0px #000;
+}
+
+.inputs-types{
+
+  width: 100%;
+  height: 80%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputs-types div{
+  
+  width: 92%;
+  height: 19%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.inputs-types div label{
+
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 10px 0px;
+  letter-spacing: 1px;
+  color: #00f2ff;
+}
+
+.inputs-types div input{
+
+  width: 100%;
+  height: 100%;
+}
+
+#text-message{
+
+  display: flex;
+  width: 92%;
+  height: 40%;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#text-message textarea{
+
+  width: 100%;
+  height: 100%;
+  resize: none;
+
+}
+
+
+.inputs-types div input, #text-message textarea{
+
+  background-color: #15151570;
+  border-radius: 3px;
+  border: none;
+  font-size: 1rem;
+  padding: 15px;
+  outline: none;
+  border: #f4f4f478 1px solid;
+  font-weight: 600;
+  transition: .5s;
+}
+
+.inputs-types div input::placeholder, 
+#text-message textarea::placeholder{
+
+  color: var(--color-white);
+  opacity: 0.6;
+}
+
+.inputs-types div input:focus, 
+#text-message textarea:focus{
+
+  background-color: #15151570;
+  transition: 1s;
+
+  outline: #00f2ff solid 1px;
+  box-shadow: 0px 0px 10px 1px #00afb9;
+}
+
+.inputs-types div input:focus::placeholder, 
+#text-message textarea:focus::placeholder{
+
+  transition: 0.5s;
+  padding-left: 10px;
+  color: #00f2ff;
+  font-style: italic;
+}
+
+.box-form button{
+
+  width: 92%;
+  height: 10%;
+  margin: 10px 0px;
+  margin-inline: auto;
+  background: none;
+  border: none;
+  border: 2px solid #f4f4f4;
+  color: #00f2ff;
+  border-radius: 5px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 5px;
+
+}
+
+.box-form button i{
+  display: none;
+  font-size: 1.6rem;
+  transition: 0.5s;
+}
+
+.box-form button:hover{
+
+  transition: 0.5s;
+  color: #f4f4f4;
+  cursor: pointer;
+  box-shadow: 0px 0px 100px 50px inset #00afb9;
+  justify-content: space-around;
+}
+
+.box-form button:hover i{
+
+  transition: 0.5s;
+  display: flex;
+}

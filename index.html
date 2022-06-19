@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!---------- LINK CSS -------------->
+  <link rel="stylesheet" href="style.css">
+  <!---------- LINK FONT AWESOME -------------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!---------- TITLE -------------->
+  <title>Estilizando Inputs com HTML e CSS</title>
+
+</head>
+<body>
+
+  <h1>Contact us</h1>
+
+<form class="box-form">
+
+  <div class="inputs-types">
+
+    <!---------- INPUT NAME -------------->
+    <div>
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Timothy John Berners-Lee">
+    </div>
+    
+    <!---------- INPUT E-MAIL -------------->
+    <div>
+      <label for="email">Email</label>
+      <input type="text" id="email" placeholder="Example@gmail.com">
+    </div>
+
+    <!---------- MESSAGE -------------->
+    <div id="text-message">
+      <label for="message">Message</label>
+      <textarea placeholder="Send us a message"></textarea>
+    </div>
+
+  </div>
+
+  <!---------- BUTTON -------------->
+  <button type="submit">Send Message  <i class="fas fa-paper-plane"></i></button>
+
+</form> 
+
+</body>
+</html>
